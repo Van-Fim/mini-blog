@@ -1,0 +1,373 @@
+main>.container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after,
+a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li>form>button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li>form>button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav>li>form>button.logout:focus,
+.nav>li>form>button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav>li>form>button.logout:focus {
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.all-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 105px;
+    gap: 40px;
+    position: relative;
+    height: 1116px;
+    background: #F5F6FA;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+header h1 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.114286px;
+    color: #202224;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+header .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 245px;
+    height: 56px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.cbtn,
+button.cbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    height: 56px;
+    background: #4379EE;
+    border-radius: 50px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.cbtn:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.cbtn.gray {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    height: 56px;
+    background: #B7C3DF;
+    border-radius: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #000;
+}
+
+.cbtn.gray:hover {
+    color: #000;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-buttons .cbtn {
+    width: 100%;
+}
+
+.login-block form {
+    width: 100%;
+}
+
+.login-block .control-label {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.0642857px;
+    color: #202224;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-bottom: 10px;
+}
+
+.login-block .help-block {
+    display: none;
+}
+
+.login-block input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #F1F4F9;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.my-post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.my-post form {
+    width: 100%;
+}
+
+.my-post input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #F1F4F9;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.my-post textarea {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #F1F4F9;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.post h4 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.0571429px;
+    color: #202224;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.post p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.05px;
+    color: #202224;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.my-post #post-title {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.0571429px;
+    color: #202224;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.my-post #post-content {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.05px;
+    color: #202224;
+    opacity: 0.6;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
